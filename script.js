@@ -1,14 +1,13 @@
 function stringChop(str, size) {
   // your code here
-	function chunkString(str, chunkLength) {
-	    if (!str) return []; // Handle null or empty input
+	if (!str) return []; // Handle null or empty input
 		
-	    let result = [];
-	    for (let i = 0; i < str.length; i += chunkLength) {
+	let result = [];
+	for (let i = 0; i < str.length; i += chunkLength) {
 	        result.push(str.substring(i, i + chunkLength));
-	    }
+	}
     
-	    return result;
+	return result;
 }
 
 // Do not change the code below
